@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocação na SEOCamp 2026 - Aula de CSS Responsivo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">SC</div>
+                    <h1>SEOCamp 2026</h1>
+                   
+                </div>
+                <nav class="nav">
+                    <a href="#sobre">Sobre</a>
+                    <a href="#carreiras">Carreiras</a>
+                    <a href="#evento">Evento</a>
+                    <a href="#contato">Contato</a>
+                </nav>
+                <button class="cta-button">Participar</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="hero">
+        <div class="hero-background"></div>
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="event-badge">
+                        <span class="badge-icon">✨</span>
+                        <span class="badge-text">Evento 27 de Março</span>
+                    </div>
+                    <h2>O futuro do <span class="gradient-text">marketing digital</span> começa aqui</h2>
+                    <p>Aprenda CSS Responsivo, SEO, GEO e CRO. Descubra as carreiras que estão transformando a internet.</p>
+                     <p>Jovens do Curso de Web Design da Vocação estarão presentes na SEOCAMP 2026</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary">Quero Participar</button>
+                        <button class="btn btn-secondary">Saiba Mais</button>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <div class="stat-number">3</div>
+                            <p>Carreiras Digitais</p>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">4h</div>
+                            <p>Aula Prática</p>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">∞</div>
+                            <p>Oportunidades</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-decoration">
+                    <div class="decoration-box">
+                        <div class="decoration-emoji">🚀</div>
+                        <p>Pronto para decolar?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Deslize para explorar</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- RESPONSIVE CSS SECTION -->
+    <section class="responsive-section" id="sobre">
+        <div class="container">
+            <div class="section-header">
+                <h2>CSS Responsivo: <span class="gradient-text">Conceitos Chave</span></h2>
+                <p>Aprenda os pilares da responsividade que funcionam em qualquer dispositivo</p>
+            </div>
+
+            <div class="concepts-grid">
+                <article class="concept-card">
+                    <div class="concept-icon">📦</div>
+                    <h3>Flexbox</h3>
+                    <p>Organize elementos lado a lado com <code>display: flex</code>. Controle alinhamento com <code>justify-content</code> e <code>align-items</code>.</p>
+                    <div class="code-example">
+                        <code>display: flex; justify-content: center;</code>
+                    </div>
+                </article>
+
+                <article class="concept-card">
+                    <div class="concept-icon">📱</div>
+                    <h3>Media Queries</h3>
+                    <p>Adapte o layout para diferentes tamanhos de tela. Mude estilos baseado na largura do dispositivo.</p>
+                    <div class="code-example">
+                        <code>@media (max-width: 768px) { ... }</code>
+                    </div>
+                </article>
+
+                <article class="concept-card">
+                    <div class="concept-icon">📲</div>
+                    <h3>Mobile-First</h3>
+                    <p>Comece pelo mobile e adicione complexidade para telas maiores. Estratégia mais eficiente e acessível.</p>
+                    <div class="code-example">
+                        <code>/* Mobile first, depois desktop */</code>
+                    </div>
+                </article>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="responsive-strategy">
+                <div class="strategy-text">
+                    <h3>Estratégia de <span class="gradient-text">Responsividade</span></h3>
+                    <div class="strategy-steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div>
+                                <h4>Desktop (1024px+)</h4>
+                                <p>Layout em colunas amplas, máximo espaço para conteúdo</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div>
+                                <h4>Tablet (768px - 1024px)</h4>
+                                <p>Ajuste de margens, fontes e espaçamento</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div>
+                                <h4>Mobile (&lt;768px)</h4>
+                                <p>Layout empilhado verticalmente, otimizado para toque</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="responsive-demo">
+                    <div class="demo-device desktop-demo">
+                        <div class="demo-label">Desktop</div>
+                        <div class="demo-content">
+                            <div class="demo-box"></div>
+                            <div class="demo-box"></div>
+                            <div class="demo-box"></div>
+                        </div>
+                    </div>
+                    <div class="demo-device tablet-demo">
+                        <div class="demo-label">Tablet</div>
+                        <div class="demo-content">
+                            <div class="demo-box"></div>
+                            <div class="demo-box"></div>
+                        </div>
+                    </div>
+                    <div class="demo-device mobile-demo">
+                        <div class="demo-label">Mobile</div>
+                        <div class="demo-content">
+                            <div class="demo-box"></div>
+                            <div class="demo-box"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CAREERS SECTION -->
+    <section class="careers-section" id="carreiras">
+        <div class="container">
+            <div class="section-header">
+                <h2>Carreiras Digitais do <span class="gradient-text">Futuro</span></h2>
+                <p>Três profissões em alta demanda que estão transformando o mercado digital</p>
+            </div>
+
+            <div class="careers-grid">
+                <article class="career-card">
+                    <div class="career-header seo-header">
+                        <div class="career-icon">📈</div>
+                    </div>
+                    <div class="career-body">
+                        <h3>SEO</h3>
+                        <p class="career-subtitle">Search Engine Optimization</p>
+                        <p class="career-description">Faça sites aparecerem nas primeiras posições do Google. Otimize conteúdo, estrutura e performance para conquistar visibilidade orgânica.</p>
+                        
+                        <div class="salaries">
+                            <p class="salaries-title">Salários Médios:</p>
+                            <div class="salary-item">
+                                <span>Júnior</span>
+                                <span class="salary-value">R$ 2k - 4k</span>
+                            </div>
+                            <div class="salary-item">
+                                <span>Pleno</span>
+                                <span class="salary-value">R$ 5k - 8k</span>
+                            </div>
+                            <div class="salary-item">
+                                <span>Sênior</span>
+                                <span class="salary-value">R$ 10k+</span>
+                            </div>
+                        </div>
+
+                        <div class="skills">
+                            <p class="skills-title">Competências:</p>
+                            <div class="skills-list">
+                                <span class="skill-badge">Google Analytics</span>
+                                <span class="skill-badge">Keyword Research</span>
+                                <span class="skill-badge">Link Building</span>
+                                <span class="skill-badge">Technical SEO</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="career-card">
+                    <div class="career-header geo-header">
+                        <div class="career-icon">🤖</div>
+                    </div>
+                    <div class="career-body">
+                        <h3>GEO</h3>
+                        <p class="career-subtitle">Generative Engine Optimization</p>
+                        <p class="career-description">A nova fronteira. Otimize conteúdo para IAs como ChatGPT e Google SGE. Profissão em alta demanda com poucas pessoas especializadas.</p>
+                        
+                        <div class="salaries">
+                            <p class="salaries-title">Salários Médios:</p>
+                            <div class="salary-item">
+                                <span>Júnior</span>
+                                <span class="salary-value">R$ 3k - 5k</span>
+                            </div>
+                            <div class="salary-item">
+                                <span>Pleno</span>
+                                <span class="salary-value">R$ 6k - 10k</span>
+                            </div>
+                            <div class="salary-item">
+                                <span>Sênior</span>
+                                <span class="salary-value">R$ 12k+</span>
+                            </div>
+                        </div>
+
+                        <div class="skills">
+                            <p class="skills-title">Competências:</p>
+                            <div class="skills-list">
+                                <span class="skill-badge">AI Prompting</span>
+                                <span class="skill-badge">Content Strategy</span>
+                                <span class="skill-badge">Data Analysis</span>
+                                <span class="skill-badge">AI Trends</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="career-card">
+                    <div class="career-header cro-header">
+                        <div class="career-icon">🎯</div>
+                    </div>
+                    <div class="career-body">
+                        <h3>CRO</h3>
+                        <p class="career-subtitle">Conversion Rate Optimization</p>
+                        <p class="career-description">Psicologia + Design. Aumente conversões através de testes A/B, análise de comportamento e otimização de UX. Transforme visitantes em clientes.</p>
+                        
+                        <div class="salaries">
+                            <p class="salaries-title">Salários Médios:</p>
+                            <div class="salary-item">
+                                <span>Júnior</span>
+                                <span class="salary-value">R$ 2.5k - 4.5k</span>
+                            </div>
+                            <div class="salary-item">
+                                <span>Pleno</span>
+                                <span class="salary-value">R$ 5.5k - 9k</span>
+                            </div>
+                            <div class="salary-item">
+                                <span>Sênior</span>
+                                <span class="salary-value">R$ 11k+</span>
+                            </div>
+                        </div>
+
+                        <div class="skills">
+                            <p class="skills-title">Competências:</p>
+                            <div class="skills-list">
+                                <span class="skill-badge">A/B Testing</span>
+                                <span class="skill-badge">Heatmaps</span>
+                                <span class="skill-badge">User Psychology</span>
+                                <span class="skill-badge">Data Analysis</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="connection-box">
+                <div class="connection-text">
+                    <h3>Conexão com <span class="gradient-text">Web Design</span></h3>
+                    <p>Um site bonito sem responsividade é invisível no Google. A responsividade impacta diretamente no SEO, na experiência do utilizador e nas conversões.</p>
+                    <ul class="connection-list">
+                        <li>
+                            <span class="list-icon">●</span>
+                            <span>Design responsivo = melhor ranking no Google</span>
+                        </li>
+                        <li>
+                            <span class="list-icon">●</span>
+                            <span>Performance no mobile = mais conversões</span>
+                        </li>
+                        <li>
+                            <span class="list-icon">●</span>
+                            <span>Código limpo = fácil para IAs entenderem</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="connection-decoration">
+                    <div class="decoration-emoji">💻</div>
+                    <p>Código + Design = Sucesso</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EVENT SECTION -->
+    <section class="event-section" id="evento">
+        <div class="container">
+            <div class="section-header">
+                <h2>SEOCamp <span class="gradient-text">2026</span></h2>
+                <p>O maior evento de marketing digital da região. Conectando talentos, estratégias e oportunidades.</p>
+            </div>
+
+            <div class="event-info-grid">
+                <article class="event-info-card">
+                    <div class="info-icon">📅</div>
+                    <h3>27 de Março</h3>
+                    <p>Data do evento principal SEOCamp 2026</p>
+                </article>
+                <article class="event-info-card">
+                    <div class="info-icon">📍</div>
+                    <h3>Local São Paulo-SP</h3>
+                    <p>AS 07h os Jovens se encontram na Vocação para um bom Café da Manhã e orientações antes de ir para o local</p>
+                </article>
+                <article class="event-info-card">
+                    <div class="info-icon">👥</div>
+                    <h3>Comunidade</h3>
+                    <p>Centenas de profissionais e entusiastas digitais</p>
+                </article>
+            </div>
+
+            <h3 class="schedule-title">Cronograma das Aulas</h3>
+            <div class="schedule-grid">
+                <article class="schedule-card">
+                    <div class="schedule-date">23/03</div>
+                    <h4>Turma A manhã</h4>
+                    <p>horário de aula das 08h as 12h com intervalo de 30 minutos para o lanche</p>
+                    <p>Estudo extra: Pesquisa sobre o que é SEO</p>
+                </article>
+                <article class="schedule-card">
+                    <div class="schedule-date">23/03</div>
+                    <h4>Turma A tarde</h4>
+                    <p>Horário de aula das 13h às 17h com 10 pausa de 30 minutos para o lanche</p>
+                    <p>Estudo Extra: Pesquisa sobre o que é GEO</p>
+                </article>
+                <article class="schedule-card">
+                    <div class="schedule-date">24/03</div>
+                    <h4>Turma B manhã</h4>
+                   <p>horário de aula das 08h as 12h com intervalo de 30 minutos para o lanche</p>
+                    <p>Estudo extra: Pesquisa sobre o que é CRO</p>
+                </article>
+                <article class="schedule-card">
+                    <div class="schedule-date">24/03</div>
+                    <p>Horário de aula das 13h às 17h com 10 pausa de 30 minutos para o lanche</p>
+                    <p>Estudo Extra: Pesquisa sobre como ininicar a carreira de SEO</p>
+                </article>
+                <article class="schedule-card">
+                    <div class="schedule-date">25/03</div>
+                    <h4>Continuação A/B Manhã</h4>
+                    <p>Apresentação da Pesquisa</p>
+                </article>
+                <article class="schedule-card">
+                    <div class="schedule-date">26/03</div>
+                    <h4>Continuação B/A Tarde</h4>
+                    <p>Apresentação da Pesquisa</p>
+                </article>
+                <article class="schedule-card">
+                    <div class="schedule-date">27/03</div>
+                    <h4>Não haverá aula</h4>
+                    <p>Os Jovens da Vocação participarão do Evento</p>
+                </article>
+                  <article class="schedule-card">
+                    <div class="schedule-date">30/03</div>
+                    <h4>Turma A manhã</h4>
+                    <p>Fala sobre sua participação no evento</p>
+                </article>
+                <article class="schedule-card">
+                    <div class="schedule-date">30/03</div>
+                    <h4>Turma A Tarde</h4>
+                    <p>Apresenta para turma as fotos do Evento</p>
+                </article>
+                <article class="schedule-card">
+                    <div class="schedule-date">31/03</div>
+                    <h4>Turma B manhã</h4>
+                    <p>Fala como foi a reação dos pais e familiares ao contar a experiência no Evento</p>
+                </article>
+                <article class="schedule-card">
+                    <div class="schedule-date">31/03</div>
+                    <h4>Turma B tarde</h4>
+                    <p>Apresenta seus objetivos e ideias após participar do evento</p>
+                </article>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="highlights-grid">
+                <article class="highlight-card">
+                    <div class="highlight-icon">💻</div>
+                    <h4>CSS Responsivo Prático</h4>
+                    <p>Aprenda na prática como criar layouts que funcionam em qualquer dispositivo</p>
+                </article>
+                <article class="highlight-card">
+                    <div class="highlight-icon">🤝</div>
+                    <h4>Networking com Especialistas</h4>
+                    <p>Conheça profissionais da indústria e expanda sua rede</p>
+                </article>
+                <article class="highlight-card">
+                    <div class="highlight-icon">⚡</div>
+                    <h4>Projeto para Portfólio</h4>
+                    <p>Saia da aula com um projeto pronto para GitHub</p>
+                </article>
+                <article class="highlight-card">
+                    <div class="highlight-icon">😉</div>
+                    <h4>Adicione mais cards</h4>
+                    <p>Fica a dica deste material para adicionar mais cards com html semântico</p>
+                </article>
+            </div>
+
+            <div class="cta-section">
+                <h3>Pronto para transformar sua carreira?</h3>
+                <p>Junte-se a centenas de jovens talentos que estão descobrindo as oportunidades do marketing digital</p>
+                <button class="btn btn-primary">Garantir Meu Lugar</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="contato">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <div class="logo-icon">SC</div>
+                        <h3>SEOCamp 2026</h3>
+                    </div>
+                    <p>Transformando Jovens talentos em Profissionais Digitais de sucesso.</p>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Navegação</h4>
+                    <ul>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#carreiras">Carreiras</a></li>
+                        <li><a href="#evento">Evento</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Recursos</h4>
+                    <ul>
+                        <li><a href="#">Documentação</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-social">
+                    <h4>Conecte-se</h4>
+                    <div class="social-links">
+                        <a href="#" title="LinkedIn">in</a>
+                        <a href="#" title="GitHub">gh</a>
+                        <a href="#" title="Twitter">tw</a>
+                        <a href="#" title="Email">@</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 SEOCamp. Todos os direitos reservados.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacidade</a>
+                    <a href="#">Termos</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
